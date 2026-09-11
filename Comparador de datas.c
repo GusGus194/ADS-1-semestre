@@ -3,7 +3,8 @@
 
 /*Um programa que determina a data cronologicamente maior de duas datas forne-
 cidas pelo usuário. Cada data deve ser fornecida por três valores inteiros onde o primeiro
-representa um dia, o segundo um mês e o terceiro um ano.*/
+representa um dia, o segundo um mês e o terceiro um ano.
+No terminal, é necessario dar espaco para adicionar a proxima parte da data.*/
 
 int main()
 {
