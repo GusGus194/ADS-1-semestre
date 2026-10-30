@@ -21,7 +21,7 @@ int main()
     }
 //F para C
     else if (Graus == 'f' || Graus == 'F') {
-       printf("Certo, quantos graus Celsius?");
+       printf("Certo, quantos graus fahrenheit?");
         scanf ("%lf", &num1);
         cel = (num1 - 32) * 5 / 9;
 
