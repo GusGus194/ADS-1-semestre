@@ -1,12 +1,12 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 
 /*Este programa avalia se a sequencia de numeros digitados pelo usuario esta ordenada de forma crescente
-utilizando duas variaveis contadoras*/
+utilizando uma variavel contadora*/
 
 int main()
 {
-    int num, cont, antcont, i;
+    int num, atual, ant, i, cont=0;
 
     printf("Ola, digite quantos numeros voce quer digitar para a avaliacao!\n");
     scanf ("%d", &num);
@@ -14,32 +14,33 @@ int main()
     i= 1;
 
     if (num <= 1){
-        printf("Impossivel realizar o calculo com um so numero");
+        printf("Sequencia com um so numero ja e ordenada.");
         return (0);
     }
 
 
     printf ("\nDigite o  numero na posicao 1:\n");
-    scanf ("%d", &antcont);
+    scanf ("%d", &ant);
 
 
     
 
     for (i = 2; i <= num; i++) {
         printf("Digite o numero na posicao %d:\n", i);
-        scanf ("%d", &cont);
+        scanf ("%d", &atual);
         
     
-    if (cont <= antcont) {
-        printf ("Sequencia nao ordenada!");
-        break;
+    if (atual < ant) {
+        cont++;
     } 
-    
-    if (i == num && cont > antcont) {
-        printf("\n A sequencia e ordenada!");
-    }
 
-    antcont = cont;    
-}
-    return 0;
+    ant = atual;    
+}   
+    if (cont == 0 ) {
+        printf("\nSequencia ordenada.");
+    } else {
+        printf("\nSequencia nao ordenada.");
+    }
+    
+        return 0;
 }
