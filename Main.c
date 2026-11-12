@@ -1,4 +1,6 @@
 #include <stdio.h>
+
+// Este programa calcula o Maximo Divisor Comum de dois numeros positivos.
 int main()
 {
     int m, n, aux;
